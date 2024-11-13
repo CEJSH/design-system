@@ -32,10 +32,11 @@
     "vitest": "^2.1.4"
   },
   "scripts": {
-    "test": "vitest",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "test:ui": "vitest --ui",
     "storybook": "storybook dev -p 6006",
-    "build": "storybook build"
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@ej/react-components-accordion": "workspace:^",
