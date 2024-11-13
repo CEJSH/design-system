@@ -1,0 +1,15 @@
+{
+  "name": "@ej/esbuild-config",
+  "packageManager": "yarn@4.5.1",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "build": "echo \"Taka!\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "esbuild": "0.16.17"
+  }
+}
