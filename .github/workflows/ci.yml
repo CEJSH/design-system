@@ -23,19 +23,16 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
           cache: yarn
 
       - name: Install Corepack
-        run: yarn global add corepack
+        run: npm install -g corepack
 
       - name: Enable Corepack and install Yarn 4.5.1
         run: |
           corepack enable
           corepack prepare yarn@4.5.1 --activate
-
-      - name: Verify Yarn version
-        run: yarn --version # 확인용
 
       - name: Install dependencies
         run: yarn install --immutable
